@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Grid Layout Practice</title>
+    <link href="custom.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- May add "-fluid" to container so it covers the width of the screen -->
+    <div class="container-fluid d-flex">
+      <div class="row d-flex">
+
+<!-- JUNGLE Header -->
+<header>
+    <h1 class="rainbow-letters">
+        <span>J</span>
+        <span>U</span>
+        <span>G</span>
+        <span>G</span>
+        <span>L</span>
+        <span>E</span>
+    </h1>
+</header>
+
+<!-- FIRST COLUMN --> 
+    <div class="col-md-3"> 
+    <div class="row flex-shrink-0 p-3">
+            
+    <!-- Welcome Photo Thumbnail -->
+        <span class="thumbnail-magnus">           
+            <a href="#" class="mini-pic d-flex p-3" id="img" aria-expanded="false">
+                <img src="https://github.com/magnus602.png" alt="magnus602" width="60" height="60" class="rounded-circle">
+            </a>
+        </span>
+
+    <!-- Greeting -->
+    <div class="greeting-div">   
+        <h4 class="greeting fw-semibold">Nice to See You Again!
+        </h4>
+    </div>    
+
+    <!-- Compose Button -->
+    <div class="compose-button">
+        <button type="button" class="button-compose btn-outline-light bg-info text-align-center">COMPOSE</button>
+    </div> 
+
+    <!-- Email @domain Button w/collapsed selection-->                  
+        <button class="domain-button btn btn-toggle rounded collapsed fs-5 link-light" data-bs-toggle="collapse" data-bs-target="#inbox-collapse" aria-expanded="true">mmagnus@domain.com
+        </button>
+    <div class="my-inbox-div collapse show">
+        <ul class="my-inbox-ul btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 15px"> 
+            <li><a href="#" class="link-light rounded">Inbox</a></li>
+            <li><a href="#" class="link-light rounded">Contact</a></li>
+            <li><a href="#" class="link-light rounded">Flagged</a></li>
+            <li><a href="#" class="link-light rounded">Drafts</a></li>
+            <li><a href="#" class="link-light rounded">Sent Items</a></li>
+            <li><a href="#" class="link-light rounded">Trash</a></li>
+        </ul>
+    </div>
+          
+    <!-- My account w/collapsed selection -->
+        <button class="my-account btn btn-toggle rounded collapsed fs-5 link-light" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="true">
+        My Account
+        </button>
+    <div class="collapse show">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 15px">
+            <li><a href="#" class="link-light rounded">Profile</a></li>
+            <li><a href="#" class="link-light rounded">Settings</a></li>
+            <li><a href="#" class="link-light rounded">Sign out</a></li>
+        </ul>
+    </div>
+    </div>
+    </div>
+               
+<!-- Second Column -->          
+   <div class="col-md-3 d-flex">
+     <div class="row d-flex">  
+        <div class="container padding-10px"> <!-- imbedded container -->
+
+            <a href="/" class="d-flex p-3 link-dark text-decoration-none">
+                <span class="fs-5 fw-bold" style="color: white">Inbox
+                </span>
+            </a> 
+            
+            <!-- Search Field -->
+        <form class="d-flex" role="search">
+            <input class="form-control me-2 flex-basis" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info flex-shrink" type="submit">Search</button>
+        </form>
+           
+    <!-- Individual emails separated by line spaces -->
+    <div class="list-group list-group-flush scrollarea padding-top-15px">
+        <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
+            <div class="d-flex align-items-center justify-content-between">
+                <strong class="mb-1">Nespresso
+                </strong>
+                    <small>Wed
+                    </small>
+            </div>
+    <div class="mb-1 small">Stock up and get a free sleeve of Melozio. Your coffee bar will thank you.</div>
+        </a>
+<!------------------------------------------------------------------------------------------------------------------->
+        <a href="#" class="list-group-item list-group-item-action active py-3 lh-tight" aria-current="true">
+    <div class="d-flex align-items-center justify-content-between">
+            <strong class="mb-1">Doffo Winery</strong>
+            <small class="text-muted-light">Tues</small>
+    </div>
+    <div class="mb-1 small">New Release: 2020 Malbec, an Argentine Tradition. An ode to the Doffo...
+    </div>
+        </a>
+<!------------------------------------------------------------------------------------------------------------------->
+        <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
+    <div class="d-flex align-items-center justify-content-between">
+            <strong class="mb-1">Bluegreen Vacations</strong>
+            <small class="text-muted">Mon</small>
+    </div>
+    <div class="mb-1 small">Explore something new for your next vacation.
+    </div>
+        </a>
+<!------------------------------------------------------------------------------------------------------------------->
+        <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
+    <div class="d-flex align-items-center justify-content-between">
+            <strong class="mb-1">Europa Village</strong>
+            <small class="text-muted">Wed</small>
+    </div>
+    <div class="mb-1 small">Don't miss CarnEvil Zombie Ball.
+    </div>
+        </a>
+<!------------------------------------------------------------------------------------------------------------------->
+        <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
+    <div class="d-flex align-items-center justify-content-between">
+            <strong class="mb-1">Daily Harvest</strong>
+            <small class="text-muted">Wed</small>
+    </div>
+    <div class="mb-1 small">Boom, your order is confirmed.
+    </div>
+        </a>
+<!------------------------------------------------------------------------------------------------------------------->
+        <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
+    <div class="d-flex align-items-center justify-content-between">
+            <strong class="mb-1">Xfinity</strong>
+            <small class="text-muted">Wed</small>
+    </div>
+    <div class="mb-1 small">We think you might like these...
+    </div>
+        </a>
+
+</div><!-- ending list group scroll area -->
+</div><!-- ending container -->    
+</div><!-- ending row -->
+</div><!-- ending column --> 
+          
+<!-- THIRD COLUMN (Selected Message Field) -->                  
+   <div class="col-md-6 d-flex padding-10px border-2px-solid-rgb(49, 49, 49)">
+    <div class="row d-flex justify-content-center bg-rgb(64, 127, 127)">
+      <div class="container bg-rgb(64, 127, 127)">
+        <div class="row">
+          <div class="col-md-12 mb-4 mt-4"> 
+
+             <!--Button Group selection bar -->
+  <div class="btn-group" style="padding-top: 15px">
+    <button type="button" class="btn btn-sm btn-outline-light bg-info"> Reply </button>
+    <button type="button" class="btn btn-sm btn-outline-light bg-info"> Reply All </button>
+    <button type="button" class="btn btn-sm btn-outline-light bg-info">Forward</button>
+    <button type="button" class="btn btn-sm btn-outline-light bg-info">Attach</button>
+    <button type="button" class="btn btn-sm btn-outline-light bg-info">Trash</button>
+  </div>
+
+  <!--Email body -->
+    <div class="content-body">
+        <h4>New: 2020 Malbec</h4>
+            <p class="email-message">An ode to the Doffo Family’s Argentine heritage, the Doffo winemaking team once again delivers excellence with their latest offering from the popular Malbec program. The 2020 vintage shows ruby red with purple hues in the glass, and excites the senses with aromas of plums, blackberries, vanilla, tobacco, caramelized sugar, and a hint of maple syrup. Seriously structured, this Malbec is balanced and solid, with a full expansion of flavors on the palate and a strong and silky finish.</p>
+            <p class="email-message"><strong>Composition: </strong>100% Malbec</p>
+            <p class="email-message"><strong>Barrel: </strong>Aged 18 months in 56% French oak and 44% American oak</p>
+            <p class="email-message"><strong>Alcohol: </strong>14%</p>
+            <p class="email-message"><strong>pH: </strong>3.6</p>
+            <p class="email-message"><strong>Total Acidity: </strong>6.9 g/L</p>
+            <p class="email-message"><strong>Enjoy now through 2030<br><br>Price: $72.00</strong></p>
+            <a href="https://shop.doffowines.com/2020-malbec-p553.aspx" class="link text-decoration-none bg-white" target="_blank">Acquire Wine</a></button>
+    </div>
+        
+
+</body>
+<!-- MaxCDN link provided by W3Schools - Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

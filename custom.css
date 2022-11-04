@@ -1,0 +1,119 @@
+body {
+  font-family: sans-serif;
+}
+
+.container-fluid {
+    box-sizing: border-box;
+    border: 5px solid rgb(49, 49, 49);
+} 
+
+.row {
+    padding: 5px;
+    margin: 0px;
+} 
+
+/* JUNGLE Header */
+header {
+    padding: 10px 10px;
+    text-align: center;
+    background-color: rgb(49, 49, 49);
+} 
+.rainbow-letters {
+    font-size: 40px;
+  }
+
+  .rainbow-letters span:nth-child(7n + 1) {
+    color: #ef5350;
+  }
+  .rainbow-letters span:nth-child(7n + 2){
+    color: #ff8d1b;
+  }
+  .rainbow-letters span:nth-child(7n + 3){
+    color: #ffee00;
+  }
+    .rainbow-letters span:nth-child(7n + 4){
+        color: #00d491c2;  
+  }
+  .rainbow-letters span:nth-child(7n + 5) {
+    color: #048af8;
+  }
+  .rainbow-letters span:nth-child(7n + 6) {
+    color: #9121f3;
+  }
+ 
+/* Columns One & Two */
+.greeting {
+  color: white;  
+  text-align: center;
+}
+
+.mini-pic {
+  justify-content: center;
+}
+
+.compose-button {
+  padding-top: 15px; 
+  padding-bottom: 10px
+  justify-content: center;
+  text-align: center;
+}
+
+.domain-button {
+  text-align: left;
+  justify-content: left;
+}
+
+.second-col-div {
+    justify-content: center;
+}
+
+.col-md-3 {
+    padding-left: 10px;
+    border-right: 3px solid rgb(49, 49, 49);
+    background-color: rgb(64, 127, 127)
+}
+
+.list-group {
+  padding-top: 15px;
+}
+
+/* Column 3 */
+
+.col-md-6 {
+  background-color: rgb(64, 127, 127);
+}
+
+.form-control {
+  padding-bottom: 15px;
+}
+
+.email-form {
+  padding-top: 15px;
+}
+
+p {
+  color: white;
+}
+
+.content-body {
+  background-color: white;
+  color:rgb(49, 49, 49);
+  padding: 10px;
+}
+
+h4 {
+  color: rgb(176, 2, 2);
+}
+
+.email-message {
+  color: rgb(49, 49, 49);
+}
+/*button inside selected email message */
+
+.link {
+    color: rgb(140, 12, 12);
+    background-color: transparent;
+    text-decoration: none;
+    border: 1.5mm ridge goldenrod;
+    padding: 5px;
+  }

@@ -31,8 +31,8 @@
 </header>
 
 <!-- FIRST COLUMN --> 
-    <div class="col-md-3"> 
-    <div class="row flex-shrink-0 p-3">
+    <div class="col=md-12 col-md-3"> 
+    <div class="row d-flex flex-shrink-0 p-3">
             
     <!-- Welcome Photo Thumbnail -->
         <span class="thumbnail-magnus">           
@@ -52,37 +52,36 @@
         <button type="button" class="button-compose btn-outline-light bg-info text-align-center">COMPOSE</button>
     </div> 
 
-    <!-- Email @domain Button w/collapsed selection-->                  
-        <button class="domain-button btn btn-toggle rounded collapsed fs-5 link-light" data-bs-toggle="collapse" data-bs-target="#inbox-collapse" aria-expanded="true">mmagnus@domain.com
-        </button>
-    <div class="my-inbox-div collapse show">
-        <ul class="my-inbox-ul btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 15px"> 
-            <li><a href="#" class="link-light rounded">Inbox</a></li>
-            <li><a href="#" class="link-light rounded">Contact</a></li>
-            <li><a href="#" class="link-light rounded">Flagged</a></li>
-            <li><a href="#" class="link-light rounded">Drafts</a></li>
-            <li><a href="#" class="link-light rounded">Sent Items</a></li>
-            <li><a href="#" class="link-light rounded">Trash</a></li>
-        </ul>
-    </div>
+    <!-- Email @juggle List Group w/collapsed selection-->                  
+    <div class="list-group">
+        <a href="#" class="my-inbox list-group-item list-group-item-action active" aria-current="true">
+            mmagnus@juggle.com
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">Inbox</a>
+        <a href="#" class="list-group-item list-group-item-action">Contact</a>
+        <a href="#" class="list-group-item list-group-item-action">Flagged</a>
+        <a href="#" class="list-group-item list-group-item-action">Drafts</a>
+        <a href="#" class="list-group-item list-group-item-action">Sent Items</a>
+        <a href="#" class="list-group-item list-group-item-action">Trash</a>
+        </div>
           
     <!-- My account w/collapsed selection -->
-        <button class="my-account btn btn-toggle rounded collapsed fs-5 link-light" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="true">
-        My Account
+    <div class="my-btn-group btn-group">
+        <button type="button" class="my-account btn btn-info dropdown-toggle padding-top-20px align-items-center text-white" data-bs-toggle="dropdown" aria-expanded="false">
+          My Account
         </button>
-    <div class="collapse show">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="padding-left: 15px">
-            <li><a href="#" class="link-light rounded">Profile</a></li>
-            <li><a href="#" class="link-light rounded">Settings</a></li>
-            <li><a href="#" class="link-light rounded">Sign out</a></li>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li><a class="dropdown-item" href="#">Sign-out</a></li>
         </ul>
-    </div>
+      </div>    
     </div>
     </div>
                
 <!-- Second Column -->          
-   <div class="col-md-3 d-flex">
-     <div class="row d-flex">  
+   <div class="col-md-3">
+     <div class="row">  
         <div class="container padding-10px"> <!-- imbedded container -->
 
             <a href="/" class="d-flex p-3 link-dark text-decoration-none">
@@ -93,11 +92,11 @@
             <!-- Search Field -->
         <form class="d-flex" role="search">
             <input class="form-control me-2 flex-basis" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-info flex-shrink" type="submit">Search</button>
+            <button class="srch-button btn btn-info text-white flex-shrink" type="submit">Search</button>
         </form>
            
     <!-- Individual emails separated by line spaces -->
-    <div class="list-group list-group-flush scrollarea padding-top-15px">
+    <div class="list-group list-group list-group-flush scrollarea padding-top-15px">
         <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
             <div class="d-flex align-items-center justify-content-between">
                 <strong class="mb-1">Nespresso
@@ -165,13 +164,13 @@
         <div class="row">
           <div class="col-md-12 mb-4 mt-4"> 
 
-             <!--Button Group selection bar -->
-  <div class="btn-group" style="padding-top: 15px">
-    <button type="button" class="btn btn-sm btn-outline-light bg-info"> Reply </button>
-    <button type="button" class="btn btn-sm btn-outline-light bg-info"> Reply All </button>
-    <button type="button" class="btn btn-sm btn-outline-light bg-info">Forward</button>
-    <button type="button" class="btn btn-sm btn-outline-light bg-info">Attach</button>
-    <button type="button" class="btn btn-sm btn-outline-light bg-info">Trash</button>
+             <!--Button Group selection bar Reply, Reply All etc. -->
+  <div class="correspond-group btn-group" style="padding-top: 15px">
+    <button type="button" class="correspond btn btn-sm btn-outline-light bg-info"> Reply </button>
+    <button type="button" class="correspond btn btn-sm btn-outline-light bg-info"> Reply All </button>
+    <button type="button" class="correspond btn btn-sm btn-outline-light bg-info">Forward</button>
+    <button type="button" class="correspond btn btn-sm btn-outline-light bg-info">Attach</button>
+    <button type="button" class="correspond btn btn-sm btn-outline-light bg-info">Trash</button>
   </div>
 
   <!--Email body -->

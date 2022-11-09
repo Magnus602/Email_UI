@@ -3,13 +3,15 @@ body {
 }
 
 .container-fluid {
-    box-sizing: border-box;
-    border: 5px solid rgb(49, 49, 49);
+  box-sizing: border-box;
+  border: 5px solid rgb(49, 49, 49);
+  border-radius: 10px;
 } 
 
 .row {
-    padding: 5px;
-    margin: 0px;
+  padding: 5px;
+  margin: 0px;
+  border-radius: 10px;
 } 
 
 /* JUNGLE Header */
@@ -17,6 +19,7 @@ header {
     padding: 10px 10px;
     text-align: center;
     background-color: rgb(49, 49, 49);
+    border-radius: 10px;
 } 
 .rainbow-letters {
     font-size: 40px;
@@ -52,10 +55,16 @@ header {
 }
 
 .compose-button {
+  border-radius: 10px;
   padding-top: 15px; 
   padding-bottom: 10px
   justify-content: center;
   text-align: center;
+}
+
+.button-compose:hover {
+  background-image: linear-gradient(45deg, #2e80e5, white, #00eaff);
+  color: rgb(0, 0, 0); 
 }
 
 .domain-button {
@@ -63,33 +72,68 @@ header {
   justify-content: left;
 }
 
+.domain-button:hover {
+  color:rgb(49, 49, 49);
+}
+
+.my-account {
+  margin-top: 20px;
+}
+
+.my-account:hover {
+  background-image: linear-gradient(45deg, #2e80e5, white, #00eaff);
+  color: rgb(0, 0, 0); 
+}
+
 .second-col-div {
-    justify-content: center;
+  justify-content: center;
 }
 
 .col-md-3 {
-    padding-left: 10px;
-    border-right: 3px solid rgb(49, 49, 49);
-    background-color: rgb(64, 127, 127)
+  flex: 1;  
+
+  border-radius: 10px;
+  padding-left: 10px;
+  border-right: 3px solid rgb(49, 49, 49);
+  background-color: rgb(64, 127, 127)
 }
 
 .list-group {
   padding-top: 15px;
+  border-radius: 10px;
+}
+
+.my-inbox {
+  background-color: translucent;
+}
+
+.my-inbox:hover {
+  color:rgb(49, 49, 49);
 }
 
 /* Column 3 */
 
 .col-md-6 {
   background-color: rgb(64, 127, 127);
+  border-radius: 10px;
 }
 
 .form-control {
   padding-bottom: 15px;
 }
 
+.srch-button:hover {
+  background-image: linear-gradient(45deg, #2e80e5, white, #00eaff);
+  color: rgb(0, 0, 0); 
+}
 .email-form {
   padding-top: 15px;
 }
+
+.correspond:hover {
+  background-image: linear-gradient(45deg, #2e80e5, white, #00eaff);
+  color: rgb(0, 0, 0); 
+  }
 
 p {
   color: white;
@@ -99,6 +143,7 @@ p {
   background-color: white;
   color:rgb(49, 49, 49);
   padding: 10px;
+  border-radius: 10px;
 }
 
 h4 {

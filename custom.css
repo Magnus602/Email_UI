@@ -90,14 +90,21 @@ header {
 }
 
 .col-md-3 {
-  flex: 1;  
-
+   flex: 1;  
   border-radius: 10px;
   padding-left: 10px;
   border-right: 3px solid rgb(49, 49, 49);
   background-color: rgb(64, 127, 127)
 }
 
+.first-col {
+  @media (min-width: 370px) and (max-width: 1720px); 
+  min height: 100vh;
+}
+
+.middle-col {
+  @media (min-width: 370px) and (max-width: 1720px); 
+}
 .list-group {
   padding-top: 15px;
   border-radius: 10px;
